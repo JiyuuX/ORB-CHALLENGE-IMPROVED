@@ -279,7 +279,7 @@ api/room/create/ and api/event/create/ and if you are unauthorized on api/event/
 NOTE : <br />
 DO NOT FORGET TO EDIT settings.py file : <br />
 <br />
-EMAIL_HOST_USER = 'YOUR_OWN_PASSWORD' <br />
+EMAIL_HOST_USER = 'YOUR_OWN_EMAIL' <br />
 EMAIL_HOST_PASSWORD = 'YOUR_OWN_PASSWORD' <br />
 
 
