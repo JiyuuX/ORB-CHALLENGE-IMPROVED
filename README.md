@@ -275,7 +275,12 @@ api/room/create/ and api/event/create/ and if you are unauthorized on api/event/
 ![image](https://github.com/JiyuuX/ORB-CHALLENGE-IMPROVED/assets/139239394/e78d6d03-715f-47a4-b029-a85c1f4783e8)
 
 
-
+<br /> <br />
+NOTE : <br />
+DO NOT FORGET THE EDIT settings.py file : <br />
+<br />
+EMAIL_HOST_USER = 'YOUR_OWN_PASSWORD' <br />
+EMAIL_HOST_PASSWORD = 'YOUR_OWN_PASSWORD' <br />
 
 
 Last Thoughts :
