@@ -277,13 +277,14 @@ api/room/create/ and api/event/create/ and if you are unauthorized on api/event/
 
 <br /> <br />
 NOTE : <br />
-DO NOT FORGET THE EDIT settings.py file : <br />
+DO NOT FORGET TO EDIT settings.py file : <br />
 <br />
 EMAIL_HOST_USER = 'YOUR_OWN_PASSWORD' <br />
 EMAIL_HOST_PASSWORD = 'YOUR_OWN_PASSWORD' <br />
 
 
-Last Thoughts :
+<br /> <br /> <br />
+Last Thoughts : <br />
 
 There are many other things can add to the project, such as the maximum number of requests per minute, the restriction of registering from the same IP address within a day, creating events according to categories, upcoming events within a specified time period (not just those within 24 hours), etc. The features can be added to the project and can make it much more complex, ,however, since adding all the features that need to be added as much as possible for now is beyond the scope of the challenge project, the project author the development of the project was terminated here.
 
