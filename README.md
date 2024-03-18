@@ -6,6 +6,8 @@ API CHALLENGE PROJECT
 P.S. This project made for a company's job application challenge project! Not personal project!
 
 
+
+
 DESCRIPTION
 
 --First, the user have to register in order to send request to endpoints (except /register/). When you send request to register, If user is unique (by username), you can create your account. After created the account, the system will create automatically your own api_key and api_secret_key, then sends email these keys to the user's email address.
@@ -18,7 +20,7 @@ DESCRIPTION
 
 -You can add event in room
 
-- You can get events in the room
+-You can get events in the room
   
 -You can update event
 
@@ -27,13 +29,19 @@ DESCRIPTION
 -You can get upcoming events in every room that you are subscribed.
 
 
+
+
+
 RESTRICTIONS
 
-- If user doesn't have api_key and api_secret_key, user cannot send request to the endpoints.
+-If user doesn't have api_key and api_secret_key, user cannot send request to the endpoints.
   
 -Every room has its own creator. Only room creators can add or delete event in the room, the rest of the users will be read-only. They cannot make any changes.
 
 -Users that want to get events, have to subscribe to the room. It means, a user only can see the events if the user subscribed to the corresponded room. Cannot see other rooms's events if the user doesn't subscribed.
+
+
+
 
 
 
@@ -48,6 +56,8 @@ API ENDPOINTS & REQUESTS BODY
 }
 
 
+
+
 /api/room/create/
 
 {
@@ -57,6 +67,8 @@ API ENDPOINTS & REQUESTS BODY
 }
 
 
+
+
 /api/room/subscribe/
 
 {
@@ -64,6 +76,8 @@ API ENDPOINTS & REQUESTS BODY
     "api_secret_key": "your_api_secret_key",
     "subscribe": "room_name_that_want_to_subscribe"
 }
+
+
 
 
 /api/event/create/
@@ -79,12 +93,16 @@ API ENDPOINTS & REQUESTS BODY
 }
 
 
+
+
 /api/room/<room_id>/events/
 
 {
     "api_key": "your_api_key",
     "api_secret_key": "your_api_secret_key"
 }
+
+
 
 
 /api/event/update/<event_id>/
@@ -99,12 +117,16 @@ API ENDPOINTS & REQUESTS BODY
 }
 
 
+
+
 /api/event/delete/<event_id>/
 
 {
     "api_key": "your_api_key",
     "api_secret_key": "your_api_secret_key"
 }
+
+
 
 
 /api/event/upcoming/
@@ -116,13 +138,17 @@ API ENDPOINTS & REQUESTS BODY
 
 
 
+
 NOTE : You can test the API by sending requests by using POSTMAN or with any other method, I used POSTMAN.
+
+
 
 
 
 EXAMPLE REQUESTS
 
 I created three account for the test purposes:
+
 
 
 User A have:
@@ -132,6 +158,7 @@ User A have:
 "api_secret_key": "hEPkASJm_efDzgwYgMpjvNCThuLlW3aYx6aLf--rihM"
 
 
+
 User B have:
 
 "api_key": "16ec6e874e224499b725a9a20c68d99b"
@@ -139,11 +166,14 @@ User B have:
 "api_secret_key": "89811mny3s76QJSamml6nstDRB8WA-FkKVXMBLNOkjk"
 
 
+
 User C have:
 
 "api_key": "c2bd29a2af3c5dd2c6fb8fc06661f80b"
 
 "api_secret_key" : "2W8e6OMKbg7MpJVs0XLhEIK4s8IZ2IiOY_2Pqs6EMuQ"
+
+
 
 
 REGISTER AND ITS RESPONSE:
