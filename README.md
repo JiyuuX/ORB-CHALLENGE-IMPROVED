@@ -141,6 +141,28 @@ API ENDPOINTS & REQUESTS BODY <br />
 NOTE : You can test the API by sending requests by using POSTMAN or with any other method, I used POSTMAN. <br />
 
 
+<br /><br />
+
+INSTALLATION AND SETUP<br />
+Make sure to install all requirements, in order to do that;<br />
+pip install -r requirements.txt (be sure you are in the right path in terminal)<br />
+<br />
+If you want to create your own .venv ;<br />
+python -m venv venv<br />
+<br />
+After installing requirements we can start,<br />
+python manage.py makemigrations<br />
+(This command detects changes made to the model files in your project and creates a "migrations" file according to these changes. This file defines changes to the database schema but does not update the database, it just saves the changes made to the model.)<br />
+
+python manage.py migrate (this command will do that)<br />
+<br />
+In order to run project,<br />
+python manage.py runserver  (it will run local server and the project)
+
+
+
+
+
 
 
 <br /><br />
