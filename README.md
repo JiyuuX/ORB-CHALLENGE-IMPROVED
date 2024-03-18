@@ -148,10 +148,12 @@ User C have:
 
 REGISTER AND ITS RESPONSE:
 
-![image](https://github.com/JiyuuX/ORB-CHALLENGE-IMPROVED/assets/139239394/59a7d267-eb4d-4f67-9639-95a8b9110b36)
+![image](https://github.com/JiyuuX/ORB-CHALLENGE-IMPROVED/assets/139239394/66de306c-956e-4b81-82a2-e4b2a4a1f080)
 
 
-![image](https://github.com/JiyuuX/ORB-CHALLENGE-IMPROVED/assets/139239394/79288769-a577-49f8-bcc6-bca6121f4b1e)
+
+![image](https://github.com/JiyuuX/ORB-CHALLENGE-IMPROVED/assets/139239394/f1ec1005-06d6-4961-a36e-f0bfd3d89fd1)
+
 
 
 
@@ -219,20 +221,15 @@ api/room/create/ and api/event/create/ and if you are unauthorized on api/event/
 ![image](https://github.com/JiyuuX/ORB-CHALLENGE-IMPROVED/assets/139239394/cd74c145-0afb-452a-829b-9f1f2df8fa6a)
 
 
-![image](https://github.com/JiyuuX/ORB-CHALLENGE-IMPROVED/assets/139239394/c587afea-57a5-4b6d-8639-28b69fceaaa1)
+![image](https://github.com/JiyuuX/ORB-CHALLENGE-IMPROVED/assets/139239394/e78d6d03-715f-47a4-b029-a85c1f4783e8)
+
 
 
 
 
 Last Thoughts :
 
-There are many other things can add to the project, such as the maximum number of requests per minute, the restriction of registering from the same IP address within a day, 
-
-creating events according to categories, upcoming events within a specified time period (not just those within 24 hours), etc. 
-
-The features can be added to the project and can make it much more complex, ,however, since adding all the features that need to be added as much as possible for now is beyond 
-
-the scope of the challenge project, the project author the development of the project was terminated here.
+There are many other things can add to the project, such as the maximum number of requests per minute, the restriction of registering from the same IP address within a day, creating events according to categories, upcoming events within a specified time period (not just those within 24 hours), etc. The features can be added to the project and can make it much more complex, ,however, since adding all the features that need to be added as much as possible for now is beyond the scope of the challenge project, the project author the development of the project was terminated here.
 
 
 
