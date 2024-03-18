@@ -1,53 +1,52 @@
 # ORB-CHALLENGE-IMPROVED
 
 
-API CHALLENGE PROJECT
+API CHALLENGE PROJECT <br />
 
-P.S. This project made for a company's job application challenge project! Not personal project!
-
-
+P.S. This project made for a company's job application challenge project! Not personal project! <br /> <br />
 
 
-DESCRIPTION
 
---First, the user have to register in order to send request to endpoints (except /register/). When you send request to register, If user is unique (by username), you can create your account. After created the account, the system will create automatically your own api_key and api_secret_key, then sends email these keys to the user's email address.
+DESCRIPTION<br />
 
---If user is registered,
+--First, the user have to register in order to send request to endpoints (except /register/). When you send request to register, If user is unique (by username), you can create your account. After created the account, the system will create automatically your own api_key and api_secret_key, then sends email these keys to the user's email address. <br />
 
--You can create a room
+--If user is registered,<br />
 
--You can subscribe in room
+-You can create a room <br />
 
--You can add event in room
+-You can subscribe in room <br />
 
--You can get events in the room
+-You can add event in room <br />
+
+-You can get events in the room <br />
   
--You can update event
+-You can update event <br />
 
--You can delete event
+-You can delete event <br />
 
--You can get upcoming events in every room that you are subscribed.
-
-
+-You can get upcoming events in every room that you are subscribed. <br />
 
 
 
-RESTRICTIONS
+<br /><br />
 
--If user doesn't have api_key and api_secret_key, user cannot send request to the endpoints.
+RESTRICTIONS <br />
+
+-If user doesn't have api_key and api_secret_key, user cannot send request to the endpoints. <br />
   
--Every room has its own creator. Only room creators can add or delete event in the room, the rest of the users will be read-only. They cannot make any changes.
+-Every room has its own creator. Only room creators can add or delete event in the room, the rest of the users will be read-only. They cannot make any changes. <br />
 
--Users that want to get events, have to subscribe to the room. It means, a user only can see the events if the user subscribed to the corresponded room. Cannot see other rooms's events if the user doesn't subscribed.
-
-
+-Users that want to get events, have to subscribe to the room. It means, a user only can see the events if the user subscribed to the corresponded room. Cannot see other rooms's events if the user doesn't subscribed. <br />
 
 
 
 
-API ENDPOINTS & REQUESTS BODY
 
-/register/
+<br /><br />
+API ENDPOINTS & REQUESTS BODY <br />
+
+/register/ <br />
 
 {
     "username": "testuser",
@@ -57,8 +56,8 @@ API ENDPOINTS & REQUESTS BODY
 
 
 
-
-/api/room/create/
+<br />
+/api/room/create/<br />
 
 {
     "api_key": "your_api_key",
@@ -68,8 +67,8 @@ API ENDPOINTS & REQUESTS BODY
 
 
 
-
-/api/room/subscribe/
+<br />
+/api/room/subscribe/ <br />
 
 {
     "api_key": "your_api_key",
@@ -79,8 +78,8 @@ API ENDPOINTS & REQUESTS BODY
 
 
 
-
-/api/event/create/
+<br />
+/api/event/create/ <br />
 
 {
     "creator_api_key": "your_api_key",
@@ -94,8 +93,8 @@ API ENDPOINTS & REQUESTS BODY
 
 
 
-
-/api/room/<room_id>/events/
+<br />
+/api/room/<room_id>/events/ <br />
 
 {
     "api_key": "your_api_key",
@@ -104,8 +103,8 @@ API ENDPOINTS & REQUESTS BODY
 
 
 
-
-/api/event/update/<event_id>/
+<br />
+/api/event/update/<event_id>/ <br />
 
 {
     "api_key": "your_api_key",
@@ -118,18 +117,8 @@ API ENDPOINTS & REQUESTS BODY
 
 
 
-
-/api/event/delete/<event_id>/
-
-{
-    "api_key": "your_api_key",
-    "api_secret_key": "your_api_secret_key"
-}
-
-
-
-
-/api/event/upcoming/
+<br />
+/api/event/delete/<event_id>/ <br />
 
 {
     "api_key": "your_api_key",
@@ -138,45 +127,55 @@ API ENDPOINTS & REQUESTS BODY
 
 
 
+<br />
+/api/event/upcoming/ <br />
 
-NOTE : You can test the API by sending requests by using POSTMAN or with any other method, I used POSTMAN.
-
-
-
-
-
-EXAMPLE REQUESTS
-
-I created three account for the test purposes:
+{
+    "api_key": "your_api_key",
+    "api_secret_key": "your_api_secret_key"
+}
 
 
 
-User A have:
-
-"api_key": "c8ba4f992b42ab436af785d2fc21caf5"
-
-"api_secret_key": "hEPkASJm_efDzgwYgMpjvNCThuLlW3aYx6aLf--rihM"
-
-
-
-User B have:
-
-"api_key": "16ec6e874e224499b725a9a20c68d99b"
-
-"api_secret_key": "89811mny3s76QJSamml6nstDRB8WA-FkKVXMBLNOkjk"
-
-
-
-User C have:
-
-"api_key": "c2bd29a2af3c5dd2c6fb8fc06661f80b"
-
-"api_secret_key" : "2W8e6OMKbg7MpJVs0XLhEIK4s8IZ2IiOY_2Pqs6EMuQ"
+<br /><br />
+NOTE : You can test the API by sending requests by using POSTMAN or with any other method, I used POSTMAN. <br />
 
 
 
 
-REGISTER AND ITS RESPONSE:
+<br /><br />
+EXAMPLE REQUESTS <br />
+
+I created three account for the test purposes: <br />
+
+
+<br />
+User A have:<br />
+
+"api_key": "c8ba4f992b42ab436af785d2fc21caf5" <br />
+
+"api_secret_key": "hEPkASJm_efDzgwYgMpjvNCThuLlW3aYx6aLf--rihM" <br />
+
+
+<br />
+User B have: <br />
+
+"api_key": "16ec6e874e224499b725a9a20c68d99b" <br />
+
+"api_secret_key": "89811mny3s76QJSamml6nstDRB8WA-FkKVXMBLNOkjk" <br />
+
+
+<br />
+User C have: <br />
+
+"api_key": "c2bd29a2af3c5dd2c6fb8fc06661f80b" <br />
+
+"api_secret_key" : "2W8e6OMKbg7MpJVs0XLhEIK4s8IZ2IiOY_2Pqs6EMuQ" <br />
+
+
+
+<br /><br />
+REGISTER AND ITS RESPONSE:<br />
 
 ![image](https://github.com/JiyuuX/ORB-CHALLENGE-IMPROVED/assets/139239394/66de306c-956e-4b81-82a2-e4b2a4a1f080)
 
